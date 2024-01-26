@@ -1,0 +1,48 @@
+.mainHeader {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 15px 40px -20px rgba(40, 44, 63, 0.15);
+}
+.mainHeader > .container {
+  max-width: 95vw;
+  min-height: 6vh;
+}
+
+.swiggyIcon {
+  transition: transform ease-out 200ms;
+}
+.swiggyIcon:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+}
+.otherSelect {
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.otherSelect > img {
+  height: 60px;
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.headerItems > li > h2 {
+  color: rgb(77, 76, 76);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 14px 25px;
+  text-align: center;
+  border-bottom: 3px solid transparent;
+  text-decoration: none;
+  transition: all ease-out 300ms;
+}
+
+.headerItemsLink:hover {
+  border-bottom: 3px solid #6e92d3;
+  color: #6e92d3;
+  cursor: pointer;
+}

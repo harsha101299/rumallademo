@@ -1,0 +1,13 @@
+.mainFooter{
+    background-color: black;
+}
+
+.footerLists {
+    list-style: none;
+    color: rgb(255, 255, 255, 0.6);
+  }
+
+  .servicesFooterItems>li:hover{
+    color: blue;
+    cursor: pointer;
+  }

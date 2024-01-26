@@ -1,0 +1,28 @@
+.ClientsSection {
+  color: white;
+}
+
+.clientsHead {
+  background-image: url("../../Assests/Images/Clients-Background.png");
+  background-position: center;
+  max-width: 100vw;
+}
+
+.CHead {
+  font-size: 54px;
+}
+.Client {
+  border: 6px solid #472e11;
+  border-radius: 16px;
+  background-color: rgb(153, 153, 150);
+  transition: transform 150ms ease-in-out;
+}
+
+.Client:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.Client img {
+  width: 250px;
+}

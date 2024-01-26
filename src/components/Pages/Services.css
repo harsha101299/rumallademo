@@ -1,0 +1,20 @@
+.servicesHead{
+    background-image: url("../../Assests/Images/servicesbackground.jpg");
+    max-width: 100vw;
+}
+
+.serviceHeads{
+    border: 0.5px solid black;
+}
+
+.serviceHeads > h3{
+    cursor: pointer;
+}
+.ActiveserviceHeads{
+    color: white;
+    background-color: rgb(9, 92, 160);
+}
+
+.OperationsImg{
+    height: 200px;
+}

@@ -1,27 +1,23 @@
 import React from "react";
 import "./Header.css";
+
 import RumalaLogo from "../../Assests/Images/RumalaLogo.jpg";
 import { NavLink, Outlet } from "react-router-dom";
-
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Header({ OpenContactInfo }) {
   return (
     <>
       <header className="mainHeader sticky">
-        <Navbar expand="lg" >
-          <Container > 
-            <Navbar.Brand href="/">
-              <div className="RumallaLogo">
-                <img src={RumalaLogo} alt="Rummala Logo" />
-              </div>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav" className="collapsingBox" >
-            <ul className="headerItems nav justify-content-between align-items-center ms-5">
+        
+        <div className=" container dflex justify-content-between  align-items-center px-3 py-0 nav">
+            <div className="otherSelect d-flex align-items-center">
+              <img src={RumalaLogo} alt="Rummala Logo" />
+            </div>
+          
+          <div className="HeaderPageOptions d-flex align-items-center">
+            <ul className="headerItems nav justify-content-center align-items-center ms-5">
               <li className="nav-item d-flex align-items-center ">
                 <NavLink
                   to="/"
@@ -67,16 +63,17 @@ function Header({ OpenContactInfo }) {
                 </NavLink>
               </li>{" "}
             </ul>
-
-            <div className="ContactButton px-4 py-2 ms-5 rounded-pill"
+          </div>
+          <div className="ContactButton px-4 py-2 rounded-pill"
             onClick={OpenContactInfo}
-            data-aos="fade-left"
           >
             <h4>Contact Us</h4>
           </div>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
+
+          {/* <button className="HeaderOptionsButton px-3">
+            <FontAwesomeIcon icon={faBars} />
+          </button> */}
+        </div>
       </header>
       <Outlet />
     </>

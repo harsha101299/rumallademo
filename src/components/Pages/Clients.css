@@ -12,17 +12,33 @@
   font-size: 54px;
 }
 .Client {
-  border: 6px solid #472e11;
-  border-radius: 16px;
-  background-color: rgb(153, 153, 150);
   transition: transform 150ms ease-in-out;
 }
 
-.Client:hover{
-  cursor: pointer;
-  transform: scale(1.05);
-}
 
 .Client img {
-  width: 250px;
+  width: auto;
+  max-height: 76px;
+}
+
+.Client a {
+  background-color: #095ca0;
+  border: 0px solid black;
+  color: white;
+  font-weight: 400;
+  transition: transform 300ms ease-in-out;
+}
+.Client a{
+  text-decoration: none;
+  color: inherit;
+}
+.Client a:hover {
+  background-color: #0a5491;
+  /* transform: scale(1.03); */
+}
+
+.Client a:active {
+  background-color: #0a5491 !important;
+  color: black;
+  transform: scale(0.9);
 }
